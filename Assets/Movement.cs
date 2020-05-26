@@ -9,7 +9,7 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
-    Rigidbody rb = null;
+    Rigidbody rb;
     CharacterController characterController;
 
     public float SPEED = 60.0f;
