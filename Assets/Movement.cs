@@ -9,7 +9,7 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
-    Rigidbody rb = null;
+    MeshCollider meshCollider = null;
     CharacterController characterController;
 
     public float speed = 6.0f;
