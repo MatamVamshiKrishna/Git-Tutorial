@@ -11,9 +11,9 @@ public class ExampleClass : MonoBehaviour
 {
     CharacterController characterController;
 
-    public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 20.0f;
+    public float SPEED = 60.0f;
+    public float JUMP = 80.0f;
+    public float GRAVITY = 200.0f;
 
     private Vector3 moveDirection = Vector3.zero;
 
