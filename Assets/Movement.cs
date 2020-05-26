@@ -9,6 +9,7 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
+    Rigidbody rb = null;
     CharacterController characterController;
 
     public float speed = 6.0f;
@@ -19,7 +20,7 @@ public class ExampleClass : MonoBehaviour
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        //characterController = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -43,7 +44,5 @@ public class ExampleClass : MonoBehaviour
         // as an acceleration (ms^-2)
         moveDirection.y -= gravity * Time.deltaTime;
 
-        // Move the controller
-        characterController.Move(moveDirection * Time.deltaTime);
     }
 }
