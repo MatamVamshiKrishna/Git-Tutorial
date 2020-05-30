@@ -9,17 +9,20 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
+    MeshCollider meshCollider = null;
+    Rigidbody rb;
+
     CharacterController characterController;
 
-    public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 20.0f;
+    public float SPEED = 60.0f;
+    public float JUMP = 80.0f;
+    public float GRAVITY = 200.0f;
 
     private Vector3 moveDirection = Vector3.zero;
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        //characterController = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -43,7 +46,5 @@ public class ExampleClass : MonoBehaviour
         // as an acceleration (ms^-2)
         moveDirection.y -= gravity * Time.deltaTime;
 
-        // Move the controller
-        characterController.Move(moveDirection * Time.deltaTime);
     }
 }
